@@ -5,7 +5,6 @@ import org.quartz.JobBuilder;
 import org.quartz.JobDetail;
 import org.quartz.Scheduler;
 import org.quartz.SchedulerException;
-import org.quartz.SimpleScheduleBuilder;
 import org.quartz.Trigger;
 import org.quartz.TriggerBuilder;
 import org.quartz.impl.StdScheduler;
@@ -16,7 +15,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class HWTest {
 	
 	 private static Scheduler scheduler;
-	 
+	 /***
+	  * git 单个文件修改提交测试
+	  * @param args
+	  */
 	public static void main(String[] args) {
 		ApplicationContext ac = new ClassPathXmlApplicationContext("spring_quartz.xml");
 
